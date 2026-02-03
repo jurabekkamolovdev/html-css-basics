@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+.hero {
+    width: 100%;
+    height: 600px;
+    background-image: url("images/samarqand.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.hero-content button {
+    padding: 14px 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero-news {
+    width: 80%;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+.hero-news h1 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.news-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.news-card img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.news-card h2 {
+    padding: 20px 20px 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.news-card p {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.news-card button {
+    margin: 20px;
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+aside {
+    width: 100%;
+    height: 600px;
+    background-image: url("images/samarqand.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px
+    }
+
+    header ul li a {
+        font-size: 21px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .hero-news {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .hero-news h1 {
+        font-size: 32px;
+    }
+
+    .news-grid {
+        flex-direction: column;
+    }
+
+    .news-card img {
+        aspect-ratio: 16 / 9;
+    }
+
+    .news-card h2 {
+        font-size: 20px;
+    }
+
+    .news-card p {
+        font-size: 15px;
+    }
+
+    .news-card button {
+        font-size: 16px;
+    }
+}
+
+
